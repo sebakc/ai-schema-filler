@@ -10,12 +10,14 @@ SCHEMA = {
                 "professional_background": {
                     "item": "string",
                     "description": "Please provide a brief description of your professional background",
-                    "required": True
+                    "required": True,
+                    "question": "Can you describe your professional background briefly?"
                 },
                 "experience": {
                     "item": "string",
                     "description": "Total years/months of experience",
-                    "required": True
+                    "required": True,
+                    "question": "How many total years/months of experience do you have?"
                 },
                 "applications": {
                     "item": "array",
@@ -24,7 +26,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "A type of application"
-                    }
+                    },
+                    "question": "What types of applications have you worked on?"
                 },
                 "technologies": {
                     "item": "array",
@@ -33,7 +36,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "A technology"
-                    }
+                    },
+                    "question": "What are the main technologies you have experience with?"
                 },
                 "methodologies": {
                     "item": "array",
@@ -42,7 +46,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "A methodology"
-                    }
+                    },
+                    "question": "What software development methodologies have you used?"
                 },
                 "sd_life_cycle": {
                     "item": "array",
@@ -51,7 +56,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "A stage in the software development life cycle"
-                    }
+                    },
+                    "question": "Which stages of the software development life cycle are you familiar with?"
                 },
                 "architecture_attributes": {
                     "item": "array",
@@ -59,7 +65,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "An architecture attribute"
-                    }
+                    },
+                    "question": "What are the attributes of the architecture you have worked on?"
                 },
                 "interests": {
                     "item": "array",
@@ -67,7 +74,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "An interest in IT"
-                    }
+                    },
+                    "question": "What are your interests in IT?"
                 },
                 "personal_qualities": {
                     "item": "array",
@@ -75,7 +83,8 @@ SCHEMA = {
                     "schema": {
                         "item": "string",
                         "description": "A personal quality"
-                    }
+                    },
+                    "question": "What personal qualities do you possess that are relevant to your work?"
                 }
             }
         },
@@ -91,11 +100,13 @@ SCHEMA = {
                     "name": {
                         "item": "string",
                         "description": "The name of the skill",
-                        "required": True
+                        "required": True,
+                        "question": "What are the names of the skills you possess?"
                     },
                     "level": {
                         "item": "string",
-                        "description": "The proficiency level of the skill (optional)"
+                        "description": "The proficiency level of the skill (optional)",
+                        "question": "What is the proficiency level of this skill?"
                     }
                 }
             }
@@ -112,27 +123,32 @@ SCHEMA = {
                     "project_name": {
                         "item": "string",
                         "description": "Name of the project",
-                        "required": True
+                        "required": True,
+                        "question": "What is the name of the project?"
                     },
                     "description": {
                         "item": "string",
                         "description": "Description of the project",
-                        "required": True
+                        "required": True,
+                        "question": "What is the project about?"
                     },
                     "customer": {
                         "item": "string",
                         "description": "Customer for whom the project was done",
-                        "required": False
+                        "required": False,
+                        "question": "Who was the customer for this project?"
                     },
                     "duration": {
                         "item": "string",
                         "description": "Duration of the project",
-                        "required": True
+                        "required": True,
+                        "question": "What was the duration of this project?"
                     },
                     "role": {
                         "item": "string",
                         "description": "Role in the project",
-                        "required": True
+                        "required": True,
+                        "question": "What was your role in this project?"
                     },
                     "responsibilities": {
                         "item": "array",
@@ -141,12 +157,14 @@ SCHEMA = {
                         "schema": {
                             "item": "string",
                             "description": "A responsibility"
-                        }
+                        },
+                        "question": "What were your responsibilities during this project?"
                     },
                     "team_size": {
                         "item": "string",
                         "description": "Size of the team",
-                        "required": False
+                        "required": False,
+                        "question": "How large was the team?"
                     },
                     "tools_technologies": {
                         "item": "array",
@@ -154,7 +172,8 @@ SCHEMA = {
                         "schema": {
                             "item": "string",
                             "description": "A tool or technology"
-                        }
+                        },
+                        "question": "What tools and technologies were used in the project?"
                     }
                 }
             }
@@ -170,12 +189,14 @@ SCHEMA = {
                     "name": {
                         "item": "string",
                         "description": "The name of the certification",
-                        "required": True
+                        "required": True,
+                        "question": "What is the name of the certification?"
                     },
                     "year": {
                         "item": "string",
                         "description": "The year the certification was obtained",
-                        "required": False
+                        "required": False,
+                        "question": "When was this certification obtained?"
                     }
                 }
             }
@@ -188,17 +209,20 @@ SCHEMA = {
                 "degree": {
                     "item": "string",
                     "description": "Degree obtained",
-                    "required": True
+                    "required": True,
+                    "question": "What degree did you obtain?"
                 },
                 "school_name": {
                     "item": "string",
                     "description": "Name of the school/university",
-                    "required": True
+                    "required": True,
+                    "question": "What is the name of the school/university?"
                 },
                 "department": {
                     "item": "string",
                     "description": "Department/Field of study",
-                    "required": False
+                    "required": False,
+                    "question": "What was your field of study or department?"
                 }
             }
         }

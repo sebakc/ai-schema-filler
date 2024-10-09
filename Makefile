@@ -15,7 +15,7 @@ run-backend:
 # Run the frontend interface
 run-frontend:
 	@echo "Running the frontend interface..."
-	cd frontend && python interface.py
+	python run_gradio.py
 
 # Lint the Python code
 lint:

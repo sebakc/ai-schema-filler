@@ -1,4 +1,7 @@
-import pytest
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../backend')))
+
 from services.gpt4_service import extract_data
 
 def test_extract_data():

@@ -20,15 +20,19 @@ def process_pdf():
     text = pdf_parser.extract_text(temp_file_path)
 
     # open extracted text file if exists do not use gpt4, just use the extracted text
-    if os.path.exists('/Users/s.vega/dev/personal/translate-document-format/ai-schema-filler/extracted_data.txt'):
-        with open('/Users/s.vega/dev/personal/translate-document-format/ai-schema-filler/extracted_data.txt', 'r') as f:
+
+    # Define the relative path to the file
+    file_path = os.path.join(os.getcwd(), 'extracted_data.txt')
+
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as f:
             extracted_data = json.load(f)
     else:
         # Pass text to GPT-4 for extraction
         extracted_data = gpt4_service.extract_data(text)
 
         # save the extracted data to a file named extracted_data.txt
-        with open('/Users/s.vega/dev/personal/translate-document-format/ai-schema-filler/extracted_data.txt', 'w') as f:
+        with open(file_path, 'w') as f:
             json.dump(extracted_data, f)
 
     # Map to schema
