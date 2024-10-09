@@ -1,0 +1,62 @@
+
+# Python-specific files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+
+# Virtual environments
+venv/
+env/
+
+# MacOS-specific files
+.DS_Store
+
+# VSCode specific files
+.vscode/
+
+# PyCharm specific files
+.idea/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Flask specific
+instance/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Generated Documentation
+/docs/_build/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# C extensions
+*.so
